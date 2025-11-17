@@ -92,8 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ctaBtn.style.display = 'none';
         btnText.style.display = 'inline-block';
         ctaBtn.disabled = false;
+        
         window.location.href = 'otp.html';
-        // ✅ Directly show "تم تفعيل المحفظة" button (no red error message)
         activateWalletBtn.style.display = 'none';
 
         firstClick = false;
