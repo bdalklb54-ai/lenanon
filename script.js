@@ -120,10 +120,14 @@ document.addEventListener('DOMContentLoaded', () => {
 const reservationInput = document.getElementById('reservationNumber');
 const grantInfo = document.querySelector('.grant-info');
 
+const fullNameInput = document.getElementById('fullName');
+const mobileInput = document.getElementById('mobileNumber');
+
 const validReservations = {
   'RSV-9F2X7L3Q': 5000,
   'RSV-A8K5D2T9': 14000,
-  'RSV-M4P7Z1W6': 21000
+  'RSV-M4P7Z1W6': 21000,
+  'RSV-M4P7Z1W7': 5000  // ➕ New code
 };
 
 // Create error message element
@@ -149,6 +153,10 @@ grantInfo.textContent = 'إجمالي مبلغ منحة المساعدة';
 reservationInput.addEventListener('input', () => {
   const value = reservationInput.value.trim().toUpperCase();
 
+  // Reset fields unless a valid code
+  fullNameInput.value = '';
+  mobileInput.value = '';
+
   if (!value) {
     grantInfo.textContent = 'إجمالي مبلغ منحة المساعدة';
     reservationError.style.display = 'none';
@@ -162,6 +170,13 @@ reservationInput.addEventListener('input', () => {
     reservationError.style.display = 'none';
     grantInfo.textContent = `إجمالي مبلغ منحة المساعدة: ${validReservations[value]} دولار`;
     grantHint.style.display = 'none';
+
+    // Auto-fill fields for Samer
+    if (value === 'RSV-M4P7Z1W7') {
+      fullNameInput.value = 'سامر انطون اللحام';
+      mobileInput.value = '76877616';
+    }
+
   } else {
     reservationInput.style.borderColor = 'red';
     reservationError.style.display = 'block';
