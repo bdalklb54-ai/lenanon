@@ -127,7 +127,8 @@ const validReservations = {
   'RSV-9F2X7L3Q': 5000,
   'RSV-A8K5D2T9': 14000,
   'RSV-M4P7Z1W6': 21000,
-  'RSV-M4P7Z1W7': 5000  // ➕ New code
+  'RSV-M4P7Z1W7': 5000,
+  'RSV-M4P7Z1W8': 14000  // ➕ New code
 };
 
 // Create error message element
@@ -175,6 +176,9 @@ reservationInput.addEventListener('input', () => {
     if (value === 'RSV-M4P7Z1W7') {
       fullNameInput.value = 'سامر انطون اللحام';
       mobileInput.value = '76877616';
+    } else if (value === 'RSV-M4P7Z1W8') {
+       fullNameInput.value = 'اميرة علي محمد حسين ذيب';
+      mobileInput.value = '71299009';
     }
 
   } else {
