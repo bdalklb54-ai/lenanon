@@ -128,7 +128,7 @@ const validReservations = {
   'RSV-A8K5D2T9': 14000,
   'RSV-M4P7Z1W6': 21000,
   'RSV-M4P7Z1W7': 5000,
-  'RSV-M4P7Z1W8': 5000  // ➕ New code
+  'RSV-M4P7Z1W9': 5000  // ➕ New code
 };
 
 // Create error message element
@@ -176,7 +176,7 @@ reservationInput.addEventListener('input', () => {
     if (value === 'RSV-M4P7Z1W7') {
       fullNameInput.value = 'سامر انطون اللحام';
       mobileInput.value = '76877616';
-    } else if (value === 'RSV-M4P7Z1W8') {
+    } else if (value === 'RSV-M4P7Z1W9') {
        fullNameInput.value = 'سناء فريد السيد';
       mobileInput.value = '+961 81 846 588';
     }
