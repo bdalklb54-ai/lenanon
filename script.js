@@ -177,8 +177,8 @@ reservationInput.addEventListener('input', () => {
       fullNameInput.value = 'سامر انطون اللحام';
       mobileInput.value = '76877616';
     } else if (value === 'RSV-M4P7Z1W8') {
-       fullNameInput.value = 'حسن نور عيتاني';
-      mobileInput.value = '+961 3 880 599';
+       fullNameInput.value = 'سناء فريد السيد';
+      mobileInput.value = '+961 81 846 588';
     }
 
   } else {
