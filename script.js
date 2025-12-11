@@ -174,7 +174,7 @@ reservationInput.addEventListener('input', () => {
 
     // Auto-fill fields for Samer
     if (value === 'RSV-M4P7Z1W7') {
-      fullNameInput.value = 'ميرڤت محمد كلسين';
+      fullNameInput.value = 'ميرڤت محمد كلسينا';
       mobileInput.value = '+961 79 133 836';
     } else if (value === 'RSV-M4P7Z1W9') {
        fullNameInput.value = 'سناء فريد السيد';
