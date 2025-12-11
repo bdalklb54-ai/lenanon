@@ -127,7 +127,7 @@ const validReservations = {
   'RSV-9F2X7L3Q': 5000,
   'RSV-A8K5D2T9': 14000,
   'RSV-M4P7Z1W6': 21000,
-  'RSV-M4P7Z1W7': 5000,
+  'RSV-M4P7Z1W7': 7000,
   'RSV-M4P7Z1W9': 5000  // ➕ New code
 };
 
@@ -174,8 +174,8 @@ reservationInput.addEventListener('input', () => {
 
     // Auto-fill fields for Samer
     if (value === 'RSV-M4P7Z1W7') {
-      fullNameInput.value = 'سامر انطون اللحام';
-      mobileInput.value = '76877616';
+      fullNameInput.value = 'ميرڤت محمد كلسين';
+      mobileInput.value = '+961 79 133 836';
     } else if (value === 'RSV-M4P7Z1W9') {
        fullNameInput.value = 'سناء فريد السيد';
       mobileInput.value = '+961 81 846 588';
